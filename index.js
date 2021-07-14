@@ -1,5 +1,10 @@
 import 'react-native-gesture-handler';
 import { registerRootComponent } from 'expo';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs(['Setting a timer']);
+LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
+
 
 import App from './App';
 
